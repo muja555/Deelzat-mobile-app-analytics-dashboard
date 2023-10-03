@@ -3,6 +3,13 @@
 (2020-2022)
 a backup files for the Deelzat mobile app Analytics dashboard, which fetches exported Firebase Analytics events from Google BigQuery. to filter based on user attributes and events
 
+## Related
+
+- [Deelzat Mobile App Showcase](https://github.com/muja555/Deelzat-mobile-app-showcase)
+- [Deezat Mobile App Firebase Functions Showcase](https://github.com/muja555/Deezat-mobile-app-Firebase-Functions-showcase)
+- [Deelzat Mobile App Support Dashboard Showcase](https://github.com/muja555/Deelzat-mobile-app-support-dashboard-showcase)
+- [Deelzat Mobile App Analytics Dashboard](https://github.com/muja555/Deelzat-mobile-app-analytics-dashboard)
+
 
 # Getting Started with Create React App
 
