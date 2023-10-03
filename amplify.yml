@@ -1,0 +1,22 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - REACT_APP_AUTH0_DOMAIN=${REACT_APP_AUTH0_DOMAIN}
+        - REACT_APP_AUTH0_CLIENTID=${REACT_APP_AUTH0_CLIENTID}
+        - REACT_APP_AUTH0_AUDIENCE=${REACT_APP_AUTH0_AUDIENCE}
+        - REACT_APP_URL_BIGQUERY=${REACT_APP_URL_BIGQUERY}
+        - REACT_APP_URL_MESSAGEAPI=${REACT_APP_URL_MESSAGEAPI}
+        - REACT_APP_URL_MESSAGEAPI_STAGING=${REACT_APP_URL_MESSAGEAPI_STAGING}
+        - yarn
+    build:
+      commands:
+        - yarn run build
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
